@@ -70,6 +70,111 @@
                 <b>Consejo: Puede diseñar botones facilmente con CSS</b> <br><br>
                 <b>Ejemplo: </b></p>
                 <button>Opción 1</button><button>Opción 2</button>
+            <h2><li>&lt;form&gt;</li></h2>
+                <p>Es un contenedor para diferentes tipo de elementos de entrada como: campos de texto, casillas de
+                    verificación, botones de opción, botonees de envío, etc.</p>
+                    <form action="#" method="post">
+                        <ul style="list-style: disc;">
+                            <li><p style="color:rgb(105, 105, 105)">&lt;Input type="text"&gt;</p> <p>Muestra un campo de texto de una sola linea.</p>
+                                <input type="text"></li>
+                            <li><p style="color:rgb(105, 105, 105)">&lt;Input type="radio"&gt;</p> <p>Muestra un botón de radio (para selecionar una de muchas opciones).</p>
+                                <input type="radio"><input type="radio"><input type="radio"></li>
+                            <li><p style="color:rgb(105, 105, 105)">&lt;Input type="checkbox"&gt;</p> <p>Muestra una casilla de verificación (para selecionar cero o más opciónes).</p>
+                                <input type="checkbox"><input type="checkbox"><input type="checkbox"></li>
+                            <li><p style="color:rgb(105, 105, 105)">&lt;Input type="submit"&gt;</p> <p>Muestra un botón de envio (para enviar un formulario).</p>
+                                <input type="submit"></li>
+                            <li><p style="color:rgb(105, 105, 105)">&lt;Input type="button"&gt;</p> <p>Muestra un botón con el que sepuede interactuar.</p>
+                                <input type="button"></li>
+                        </ul>
+                    </form>
+                <p>Ejemplo <a href="C:\Dev\RepOne\Labels\example\form.html"><i>form</i></a></p>
+            <h2><li><p>&lt;footer&gt;</p></li></h2>
+                <p>Define un pie de página para un documento o sección. <br>Normalmente contien:</p>
+                    <ul style="list-style: disc; color: rgb(79, 114, 102);">
+                        <li><p>Información de autoría</p></li>
+                        <li><p>Información de registro</p></li>
+                        <li><p>Información de contacto</p></li>
+                        <li><p>Mapa de sitio</p></li>
+                        <li><p>Volver a los enlaces superiores</p></li>
+                        <li><p>Documentos relacionados</p></li>
+                    </ul>
+                <p>Ejemplo de <a href="C:\Dev\RepOne\Labels\example\footer.html"><i>footer</i></a></p>
+            <h2><li><p>&lt;header&gt;</p></li></h2>
+                <p>Representa un contenedor de contenido introductorio o un conjunto de enlaces de navegación. <br>Normalmente contiene:</p>
+                    <ul style="list-style: disc; color: rgb(62, 77, 71);">
+                        <li><p>Uno a más elementos de encabezado (eg.: &lt;h1&gt; - &lt;h6&gt;)</p></li>
+                        <li><p>Logotipo o ícono</p></li>
+                        <li><p>Información de autoría</p></li>
+                        <p><b>NOTA: </b>Pueden haber varios &lt;header&gt; en un documento HTML, sin embargo, no se pueden colocar dentro de un &lt;footer&gt;, &lt;adress&gt; u otro &lt;header&gt; mismo.</p>
+                    </ul>
+                    <p>Ejemplo:</p>
+                        <h1>ESTE ES UN ENCABEZADO</h1>
+                        <footer>Elaborado el 23 de Sepriembre de 2022</footer>
+            <h2><li><p>&lt;hgroup&gt;</p></li></h2>
+                <p>Generalmente se usa para agrupar un conjunto d euno o más elementos &lt;h1&gt; - &lt;h6&gt;, para agrupar, por
+                    ejemplo, un titulo de sección y un subtitulo adjunto.</p>
+                    <p>Ejemplo de <a href="C:\Dev\RepOne\Labels\example\hgroup.html"><i>hgroup</i></a></p>
+            <h2><li><p>&lt;h1&gt; - &lt;h6&gt;</p></li></h2>
+                <p>Se utiliza para definir encabezados HTML. <br>Ejemplo:</p>
+                    <h1 style="background-color:rgb(120, 87, 151) ;color: azure;"><p>Este es un encabezado.</p></h1>
+                    <h2 style="color:rgb(122, 37, 37) ;"><p>Este es otro encabezado.</p></h2>
+            <h2><li><p>&lt;img&gt;</p></li></h2>
+                <p>Se utiliza para incrustar una imagen en una página HTML. <br>
+                    Técnicamente, las imágenes no se insertan en una página web; las imágenes están vinculadas a páginas
+                    web. La etiqueta &lt;ima&gt; crea un espacio de espera para la imagen de referencia. <br>
+                    Tiene atributos obligatorios:
+                    <ul style="color:rgb(73, 53, 53) ; list-style: disc">
+                        <li><p>src: especifica la ruta a la imagen</p></li>
+                        <li><p>alt: especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede
+                            mostrar</p></li>
+                    </ul>
+                    Ejemplo <a href="C:\Dev\RepOne\Labels\example\img.html"><i>img:</i></a>
+                </p>
+            <h2><li><p>&lt;map&gt;</p></li></h2>
+                <p>
+                    Se utiliza para definir un mapa de imagen, es una imagen con áreas en las que se puede hacer clic. 
+                    El atributo de nombre requerido del &lt;map&gt; esta asocioado con el atributo usemap de &lt;img&gt; y crea una
+                    relación entre la imagen y el mapa. <br> 
+                </p><p>Ejemplo <a href="C:\Dev\RepOne\Labels\example\map.html"><i>map</i></a></p>
+            <h2><li><p>&lt;nav&gt;</p></li></h2>
+                <p>Define un conjunto de enlaces de navegación. <br>
+                    Tenga en cuenta que <b>NO</b> todos los enlaces de un documento deben estar dentro de un &lt;nav&gt;. Este
+                    elemento está destinado solo para el bloque principal de enlaces de navegación.</p>
+                <p>Ejemplo:</p>
+                <nav>
+                    <a href="https://www.chaos.com/">Chaos Group</a> | <a href="https://www.youtube.com/">YouTube</a> | <a href="https://github.com/">GitHub</a> | <a href="https://infoedcmvc.my.canva.site/alfonso6z">EDC</a>
+                </nav>
+            <h2><li><p>&lt;p&gt;</p></li></h2>
+                <p>Define un párrafo. <br>
+                    Los navegadores agregan automáticamente una línea en blanco antes y después de cada &lt;p&gt;.
+                </p>
+                <p>Ejemplo de <a href="C:\Dev\RepOne\Labels\example\p.html"><i>p</i></a></p>
+            <h2><li><p>&lt;script&gt;</p></li></h2>
+                <p>
+                    Se utiliza para incrustar un script del lado del cliente <b>JavaScript</b><br>
+                    Contiene declaraciones de secuencias de comandos o apunta a un archivo de secuencia de comandos
+                    externos a través del atributo <b>src</b>.
+                    Los usos más comunes de <b>JavaScript</b> son la manipulación de imágenes, la validación de formularios y los
+                    cambios dinámicos de contenido. <br>
+                    <i>
+                        <b>Nota:</b> cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la
+                        información de la hoja de estilo. Si se han definido algunas propiedades para el mismo selector
+                        (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída (consulte el
+                        ejemplo a continuación).
+                    </i>
+                </p>
+                <p>Ejemplo <a href="C:\Dev\RepOne\Labels\example\script.html"><i>script</i></a></p>
+            <h2><li><p>&lt;style&gt;</p></li></h2>
+                <p>
+                    Se utiliza para definir la información de estilo <b>CSS</b> de un documento. 
+                    Dentro de &lt;style&gt;, especifica cómo deben mostrarse los elementos HTML en un navegador.
+                </p>
+                <p>Ejemplo: <i style="color:rgb(212, 67, 0) ;">Este es un ejemplo se estilo (style)</i></p>
+            <h2><li><p>&lt;section&gt;</p></li></h2>
+                <p>
+                    Define una sección en un documento.
+                </p>
+                <p>Ejemplo <a href="C:\Dev\RepOne\Labels\example\section.html"><i>section</i></a></p>
         </ul>
 </body>
 </html>
