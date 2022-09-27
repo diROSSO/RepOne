@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<header>
+    <h1>Formularios</h1>
+</header>
+
+<body>
+    <section>
+        <p>Un formulario en HTML es una sección de un documento que contiene controles como
+            campos de texto, campos de contraseña, casillas de verificación, botones de radio, botón
+            de envío, menús, etc.
+            <br>
+            Un formulario en HTML facilita al usuario ingresar datos que se enviarán al servidor para
+            su procesamiento, como nombre, dirección de correo electrónico, contraseña, número de
+            teléfono, etc.
+            <br>
+            Se requieren formularios de HTML si desea recopilar algunos datos del visitante del sitio.
+            <br>
+            Por ejemplo: si un usuario desea comprar algunos artículos en Internet, debe completar
+            un formulario, como la dirección de envío y los detalles de la tarjeta de crédito/débito,
+            para que el artículo pueda enviarse a la dirección indicada.
+        </p>
+        <h2>Etiquetas útiles</h2>
+        <table border="1">
+            <tr>
+                <th>Etiqueta</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>&lt;form></td>
+                <td>Define un formulario HTML para ingresar datos para ser
+                    usados en otro lado.</td>
+            </tr>
+            <tr>
+                <td>&lt;input></td>
+                <td>Define un control de entrada.</td>
+            </tr>
+            <tr>
+                <td>&lt;textarea></td>
+                <td>Define un control de entrada multilínea.</td>
+            </tr>
+            <tr>
+                <td>&lt;label></td>
+                <td>Define una etiqueta para un elemento de entrada.</td>
+            </tr>
+            <tr>
+                <td>&lt;fieldset></td>
+                <td>Agrupa el elemento relacionado en un formulario.</td>
+            </tr>
+            <tr>
+                <td>&lt;legend></td>
+                <td>Define un título para un elemento</td>
+            </tr>
+            <tr>
+                <td>&lt;select></td>
+                <td>Define una lista desplegable.</td>
+            </tr>
+            <tr>
+                <td>&lt;optgroup></td>
+                <td>Define un grupo de opciones relacionadas en una lista desplegable.</td>
+            </tr>
+            <tr>
+                <td>&lt;option></td>
+                <td>Define una opción en una lista desplegable.</td>
+            </tr>
+            <tr>
+                <td>&lt;button></td>
+                <td>Define un botón en el que se puede hacer clic.</td>
+            </tr>
+            <tr>
+                <td>&lt;datalist></td>
+                <td>Especifica una lista de opciones predefinidas para el controlde entrada.</td>
+            </tr>
+            <tr>
+                <td>&lt;keygen></td>
+                <td>Define un campo generador de pares de claves paraformularios.</td>
+            </tr>
+            <tr>
+                <td>&lt;output></td>
+                <td>Define el resultado de un cálculo.</td>
+            </tr>
+        </table>
+        <p>El elemento &lt;form> no crea un formulario en sí mismo, pero es un contenedor para
+            colocar todos los elementos de un formulario necesarios, como &lt;input>, &lt;label>, etc.
+            La etiqueta &lt;form> dispone de varios atributos para utilizar:</p>
+
+        <h2>Atributos de la etiqueta form</h2>
+        <table border="1">
+            <tr>
+                <th>Atributo</th>
+                <th>valor</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>action</td>
+                <td>URL</td>
+                <td>Dirección URL del back-end donde se enviará la información del formulario.</td>
+            </tr>
+            <tr>
+                <td>method</td>
+                <td>get | post</td>
+                <td>Método HTTP de envío. GET a través de URL, POST para envío extenso.</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>nombre</td>
+                <td>Nombre del formulario. Útil para procesar posteriormente.</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>destino</td>
+                <td>Nombre del lugar donde se abrirá el formulario. \_blank para nueva pestaña.</td>
+            </tr>
+            <tr>
+                <td>enctype</td>
+                <td>tipo</td>
+                <td>Codificación para el envío del formulario. Importante para envío de archivos.</td>
+            </tr>
+            <tr>
+                <td>accept-charset</td>
+                <td>codificación</td>
+                <td>Fuerza a utilizar una codificación en los parámetros de textodel formulario.</td>
+            </tr>
+            <tr>
+                <td>autocomplete</td>
+                <td>on | off</td>
+                <td>Activa o desactiva el autocompletado para todos los campos del formulario.</td>
+            </tr>
+            <tr>
+                <td>novalidate</td>
+                <td></td>
+                <td>Con este atributo presente, el formulario obvia la validación HTML5.</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>tipo de campo</td>
+                <td>Indica el tipo de campo del que se trata.</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Ejemplos de formularios -->
+    <h2>&lt;input></h2>
+    <p>Es un elemento fundamental de la etiqueta form. Se utiliza
+        para crear campos de formulario, para recibir información del usuario. El siguiente es un
+        ejemplo para mostrar la entrada de texto simple.
+        <br>
+        El atributo type="text" de la etiqueta de entrada crea un control de campo de texto,
+        también conocido como control de campo de texto de una sola línea. El atributo name es
+        opcional, pero se requiere para el componente del lado del servidor.
+    </p>
+    <h3>Ejemplo 1</h3>
+    <form>
+        Introduce tu nombre <br>
+        <input type="text" name="username">
+    </form>
+    <h3>Ejemplo 2</h3>
+    <form action="">
+        Nombre: <input type="text" name="firstname"><br>
+        Apellido: <input type="text" name="lastname">
+    </form>
+    <!-- textarea -->
+    <h2>&lt;textarea></h2>
+    <p>
+        En HTML se usa para insertar texto de varias líneas en un formulario. El tamaño de &lt;textarea> se puede
+        especificar
+        usando el atributo rows o cols.
+    </p>
+    <form action="">
+        Ingresa tu dirección <br>
+        <textarea cols="30" rows="10"></textarea>
+    </form>
+    <!-- label -->
+
+    <h2>&lt;labe></h2>
+    <p>
+        Se considera usar <strong>label</strong> en form ya que hace que el código sea amigable para el
+        analizador/navegador/usuario.
+        <br>
+        Si haces clic en la etiqueta <strong>label</strong>, se centrará en el control de texto (en la caja donde se
+        introduce el texto), esto es tiene mayor funcionalidad en pantallas táctiles. Para hacerlo,
+        debes tener el atributo <strong>for</strong> en la etiqueta <strong>label</strong> cuyo valor debe ser el mismo
+        que el valor
+        del atributo <strong>id</strong> de la etiqueta <strong>inpFut</strong>.
+    </p>
+    <!-- ejemplo -->
+    <h3>Ejemplo</h3>
+    <form action="">
+        <label for="firstname">Nombre</label>
+        <input type="text" id="firstname" name="firstname"><br>
+        <label for="lastname">Apellido</label>
+        <input type="text" id="lastname" name="lastname"><br>
+    </form>
+    <!-- Validaci ones -->
+    <h2>Validaciones</h2>
+    <h3>Control de campo de password</h3>
+    <p>
+        La contraseña no es visible para el usuario en el control de campo de
+        <strong>password</strong> que se pone como valor en el atributo <strong>type</strong> de la etiqueta
+        <strong>input</strong>.
+    </p>
+    <form action="">
+        <label for="password"> Contraseña</label><br>
+        <input type="password" id="password" name="password">
+    </form>
+    <h3>Control de campo email</h3>
+    <p>El campo <strong>email</strong> es nuevo en HTML 5. Valida el texto
+        para introducir la dirección de correo electrónico correctamente. Debes utilizar @
+        (arroba) y . (punto) en este campo.</p>
+    <form action="">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </form>
+    <h3>Control de botón de radio en form</h3>
+    <p>
+        El botón de radio se utiliza para seleccionar una opción entre múltiples opciones.
+        Se utiliza para la selección de género, preguntas de prueba, etc.
+        <br> Si usas un nombre para multiples botones de radio, solo se podrá seleccionar un botón de radio a la vez.
+    </p>
+    <form>
+        <label for="gender">Genero: </label>
+        <input type="radio" id="gender" name="gender" value="male" />Masculino
+        <input type="radio" id="gender" name="gender" value="female" />Femenino
+        <input type="radio" id="gender" name="gender" value="other" />Otro <br />
+    </form>
+    <h3> Control de checkbox</h3>
+    <p>
+        El control <strong>checkbox</strong> se utiliza para marcar múltiples opciones de casillas de verificación
+        dadas.
+    </p>
+    <form>
+        Pasatiempo:<br>
+        <input type="checkbox" id="sing" name="sing" value="sing" />
+        <label for="sing">Cantar</label><br>
+        <input type="checkbox" id="football" name="football" value="football" />
+        <label for="football">Futbol</label><br>
+        <input type="checkbox" id="reading" name="reading" value="reading" />
+        <label for="reading">Leer</label>
+    </form>
+    <h3>Control de botón sumit</h3>
+    <p>
+        En HTML <strong>&lt;input type="submit"></strong> se utiliza para agregar un botón de
+        <strong><i>Enviar</i></strong> en la página web. Cuando el usuario hace clic en el botón
+        <strong><i>Enviar</i></strong>, el formulario se envía al servidor.
+        <br>
+    <p>Aquí <strong>type=submit</strong> está especificando que es un botón de <strong><i>Enviar</i></strong>. El
+        atributo <strong>value</strong> puede
+        ser cualquier cosa que escribamos en el botón de la página web. El atributo <strong>name</strong> puede
+        ser omitido aquí.</p>
+    </p>
+    <form>
+        <label for="name">Introducir nombre</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="pass">Introducir contraseña</label><br>
+        <input type="Password" id="pass" name="pass" required><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>&lt;fieldset></h2>
+    <p>
+        El elemento <strong>&lt;fieldset></strong> en HTML se usa para agrupar la información relacionada
+        de un formulario. Este elemento se usa con el elemento <strong>&lt;legend></strong> que
+        proporciona un título para los elementos agrupados.
+    </p>
+    <form>
+        <fieldset>
+            <legend>Información del usuario:</legend>
+            <label for="name">Introducir nombre</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="pass">Introducir contraseña</label><br>
+            <input type="Password" id="pass" name="pass"><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>

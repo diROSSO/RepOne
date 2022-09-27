@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<header>
+    <h1>Tablas</h1>
+    <p>La etiqueta de table en HTML se utiliza para mostrar datos en forma tabular (fila *
+        columna). Puede haber muchas columnas en una fila.
+        <br>
+        Podemos crear una tabla para mostrar datos en forma tabular, usando el elemento
+        <strong>&lt;table></strong>, con la ayuda de los elementos <strong>&lt;tr></strong>, <strong>&lt;t</strong>d> y
+        <strong>&lt;th></strong>.
+        <br>
+        En cada tabla, la fila de la tabla está definida por la etiqueta <strong>&lt;tr></strong>, el encabezado de la
+        tabla está definido por <strong>&lt;t</strong>h> y los datos de la tabla están definidos por las etiquetas
+        <strong>&lt;td></strong>.
+        <br>
+        Las tablas en HTML se utilizan para gestionar el diseño de la página, por ejemplo, sección
+        de encabezado, barra de navegación, contenido del cuerpo, sección de pie de página,
+        etc. Pero se recomienda usar la etiqueta div sobre table para administrar el diseño de la
+        página.
+    </p>
+</header>
+
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Puntaje</th>
+        </tr>
+        <tr>
+            <td>Sonoo</td>
+            <td>Jaiswal</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>William</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Swati</td>
+            <td>Sironi</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>Chetna</td>
+            <td>Singh</td>
+            <td>72</td>
+        </tr>
+    </table>
+    <h2>Atributo border</h2>
+    <p>Atributo de borde en HTML. Puedes usar el atributo border de la etiqueta table en HTML
+        para especificar el borde de una tabla.</p>
+    <table border=1>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Puntuaje</th>
+        </tr>
+        <tr>
+            <td>Sonoo</td>
+            <td>Jaiswal</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>William</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Swati</td>
+            <td>Sironi</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>Chetna</td>
+            <td>Singh</td>
+            <td>72</td>
+        </tr>
+    </table>
+    <h2>Ancho de la tabla</h2>
+    <p>Podemos ajustar el ancho de nuestra tabla según nuestras
+        necesidades. El atributo style y width son usados en la etiqueta table para especificar el
+        ancho de la tabla, este puede especificado en píxeles o porcentaje.</p>
+    <table style=width:100% border=1>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Puntuaje</th>
+        </tr>
+        <tr>
+            <td>Sonoo</td>
+            <td>Jaiswal</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>William</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Swati</td>
+            <td>Sironi</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>Chetna</td>
+            <td>Singh</td>
+            <td>72</td>
+        </tr>
+    </table>
+    <h2>Tabla en HTML con colspan.</h2>
+    <p>Si deseas que una celda abarque más de una columna,
+        puedes usar el atributo <strong>colspan</strong> sobre la etiqueta <th>. El atributo dividirá una celda/fila
+            en varias columnas, y el número de columnas dependerá del valor del atributo <strong>colspan</strong>.</p>
+    <table style=width:100% border=1>
+        <tr>
+            <th>Nombre</th>
+            <th colspan=2>No. Movil</th>
+        </tr>
+        <tr>
+            <td>Omar Montoya</td>
+            <td>55123456</td>
+            <td>55654321</td>
+        </tr>
+    </table>
+    <h2>Tabla en HTML con <strong>rowspan</strong></h2>
+    <p>Si deseas que una celda abarque más de una fila, puedes
+        usar el atributo <strong>rowspan</strong> sobre la etiqueta &lt;th>. Este dividirá una celda en varias filas. El
+        número de filas divididas dependerá de los valores de intervalo de filas.</p>
+    <table style=width:100% border=1>
+        <tr>
+            <th>Nombre</th>
+            <td>Omar Montoya</td>
+        </tr>
+        <tr>
+            <th rowspan=2>No. Movil</th>
+            <td>55123456</td>
+        </tr>
+        <tr>
+            <td>55654321</td>
+        </tr>
+    </table>
+    <h2>Tabla en HTML con caption.</h2>
+    <p>El título de una tabla en HTML se muestra encima de la
+        tabla. Para colocarlo debe usarse la etiqueta caption solo después de la etiqueta table.</p>
+    <table border=1 style=width:100%>
+        <caption>Registros de estudiantes</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Puntaje</th>
+        </tr>
+        <tr>
+            <td>Leticia</td>
+            <td>Lopez</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Miguel</td>
+            <td>Cortes</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Erica</td>
+            <td>Robles</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Ignacio</td>
+            <td>Torres</td>
+            <td>62</td>
+        </tr>
+    </table>
+</body>
+
+</html>

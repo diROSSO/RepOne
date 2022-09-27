@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Curso, Codigos, PILARES, Escuela">
+    <meta name="description" content="Escuela de Codigos en PILARES">
+    <meta name="author" content="ADIP">
+    <meta http-equiv="refresh" content="5"; url=https://pilares.cdmx.gob.mx/inicio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta</title>
+    <style>
+        span{
+            color:darkblue; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<header>
+    <h1>Etiqueta meta</h1>
+</header>
+
+<body>
+    <p>
+        La etiqueta
+        <strong>&lt;meta></strong> en HTML se utiliza para representar los metadatos sobre el
+        documento HTML. Especifica la descripción de la página, las palabras clave,
+        los derechos de autor, el idioma, el autor de los documentos, etc.
+        <br>
+        Los metadatos no se muestran en la página web, pero los utilizan los motores de
+        búsqueda, los navegadores y otros servicios web que escanean el sitio o la página web
+        para conocerla.
+        <br>
+        Con la ayuda de la etiqueta <strong>meta</strong>, puedes experimentar y obtener una vista previa de
+        cómo se mostrará tu página web en el navegador.
+        <br>
+        La etiqueta
+        <strong>&lt;meta></strong> se coloca dentro de la etiqueta
+
+        <strong>&lt;head></strong> y se puede usar
+        más de una vez en un documento.
+        <br>
+        A continuación una lista de <strong>atributos</strong> para la etiqueta<strong> meta</strong>:
+    </p>
+    <table border="1">
+        <tr>
+            <th>Atributo</th>
+            <th>valor</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>charset </td>
+            <td>character_set</td>
+            <td>Especifica la codificación de caracteres de una página HTML.</td>
+        </tr>
+        <tr>
+            <td>content </td>
+            <td>text</td>
+            <td>Contiene el valor del atributo name y http-equiv en un documento HTML, dependiendo del contexto.</td>
+        </tr>
+        <tr>
+            <td>http-equiv</td>
+            <td>
+                <ul>
+                    <li>Content-type</li>
+                    <li>default-style</li>
+                    <li>refresh</li>
+                </ul>
+            </td>
+            <td>Especifica la información proporcionada por el servidor web sobre cómo se debe servir la página web.
+            </td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>
+                <ul>
+                    <li>application-name</li>
+                    <li>author</li>
+                    <li>description</li>
+                    <li>generator</li>
+                    <li>keywords</li>
+                </ul>
+            </td>
+            <td>Especifica el nombre de los metadatos a nivel de documento.</td>
+        </tr>
+    </table>
+    <h2>Ejemplo</h2>
+    <pre style="background-color: darkcyan; font-size: 1.5vw;">
+        &lt;!DOCTYPE html>
+        &lt;html>
+        &lt;head>
+            <span>&lt;!-- Define la codificación de caracteres.
+                El valor de charset es "utf-8", lo que significa que
+                admitirá mostrar en cualquier idioma. --></span>
+            &lt;meta charset="utf-8">
+            <span>&lt;!-- Especifica la lista de palabras clave que utilizan los motores de búsqueda. --></span>
+            &lt;meta name="keywords" content="Curso, Codigos, PILARES, Escuela">
+            <span>&lt;!-- Define la descripción del sitio web que es útil para proporcionar
+                una búsqueda relevante realizada por los motores de búsqueda. --></span>
+            &lt;meta name="description" content="Escuela de Codigos en PILARES">
+            <span>&lt;!--Especifica el autor de la página. Es útil extraer la información
+                del autor mediante el sistema de gestión de contenido automáticamente.--></span>  
+            &lt;meta name="author" content="A6z">
+            <span>&lt;!-- Especifica proporcionar instrucciones al navegador para actualizar
+                automáticamente el contenido después de cada 50 segundos
+                (o en cualquier momento dado). --></span>
+            &lt;meta http-equiv="refresh" content="50">
+            <span>&lt;!-- En el ejemplo anterior, hemos establecido una URL con contenido
+                para que redirija automáticamente a la página dada después del
+                tiempo proporcionado. --></span>
+            &lt;meta http-equiv="refresh" content="50"; url=https://pilares.cdmx.gob.mx/inicio">
+            <span>&lt;!-- Especifica la ventana gráfica para controlar la dimensión de la página y la escala para
+                que nuestro sitio web se vea bien en todos los dispositivos. Si esta etiqueta está presente,
+                indica que esta página es compatible con dispositivos móviles.  --></span>
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lt;/head>
+        &lt;body>
+            &lt;h2>Ejemplo de la etiqueta meta&lt;/h2>
+            &lt;p>Este ejemplo muestra el uso de la etiqueta meta dentro de un documento HTML&lt;/p>
+        &lt;/body>
+        &lt;/html>
+    </pre>
+</body>
+
+</html>
