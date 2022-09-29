@@ -1,0 +1,30 @@
+header, aside, article, footer, nav {
+    border-radius: 20px; border: solid #3F7CC4 1px; text-align: center;
+}
+div {
+    display: flex;
+}
+aside, article {
+    width: 40%;
+}
+header {
+    margin-bottom: 20px; background-color: #E8F2A1;
+}
+footer {
+    margin-top: 20px; background-color: #CEF2FF;
+}
+nav {
+    margin-right: 20px; background-color: #F7D1D5; width: 20%;
+}
+aside {
+    margin-left: 20px; background-color: #DEDCE6;
+}
+body {
+    font-size: x-large;
+}
+h3 {
+    margin-top: -30px;
+}
+article {
+    background-color: #FFF5CE; 
+}
