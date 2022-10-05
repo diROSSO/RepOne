@@ -1,11 +1,11 @@
 header {
-    background-color:#322E2F;
+    background-color:#322E2F; margin-bottom: 20px;
 }
 h1 {
     color: #C7DDCC; text-align: center;
 }
 nav {
-    background-color:#C7DDCC; text-align: center;
+    background-color:#C7DDCC; text-align: center; margin-top: -20px;
 }
 a {
     color: #322E2F;
@@ -14,13 +14,13 @@ body {
     background-color: #75C9B7;
 }
 hgroup {
-    background-color: #C7DDCC;
+    background-color: #C7DDCC; display: flex;
 }
 article {
-    background-color: #12A4D9;
+    background-color: #12A4D9; width: 60%;
 }
 aside {
-    background-color: #D9138A;
+    background-color: #D9138A; width: 40%;
 }
 footer {
     background-color: #E2D810;
