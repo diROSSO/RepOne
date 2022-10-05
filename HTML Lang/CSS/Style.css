@@ -1,0 +1,27 @@
+a {
+    color: #322E2F;
+}
+body {
+    background-color: #75C9B7;
+}
+header {
+    background-color:#322E2F;
+}
+h1 {
+    color: #C7DDCC; text-align: center;
+}
+nav {
+    background-color:#C7DDCC; text-align: center;
+}
+hgroup {
+    background-color: #C7DDCC;
+}
+article {
+    background-color: #12A4D9;
+}
+aside {
+    background-color: #D9138A;
+}
+footer {
+    background-color: #E2D810;
+}
