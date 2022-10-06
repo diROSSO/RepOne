@@ -5,7 +5,7 @@ h1 {
     color: #C7DDCC; text-align: center; font-size: 50px ; margin-top: 40px;  padding-top: 10px;
 }
 nav {
-    background-color:#C7DDCC; text-align: center; display: flex; margin-top:-25px; 
+    background-color:#C7DDCC; text-align: center; display: flex; margin-top:-25px; padding: 3px
 }
 a {
     color: #322E2F; width: 25%;
