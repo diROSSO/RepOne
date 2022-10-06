@@ -14,13 +14,13 @@ body {
     background-color: #75C9B7;
 }
 hgroup {
-    background-color: #C7DDCC; display: flex;
+    background-color: #C7DDCC; display: flex; padding: 8px
 }
 article {
-    background-color: #12A4D9; width: 80%; text-align: center; margin: 8px; padding: 10px;
+    background-color: #12A4D9; width: 80%; text-align: center; padding: 10px; margin-right: 8px;
 }
 aside {
-    background-color: #D9138A; width: 20%; text-align: center; margin: 8px; margin-left: -1px; padding: 10px; 
+    background-color: #D9138A; width: 20%; text-align: center; margin-left: -1px; padding: 10px; 
 }
 footer {
     background-color: #E2D810; text-align: center; 
