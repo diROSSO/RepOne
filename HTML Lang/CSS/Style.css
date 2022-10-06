@@ -1,14 +1,14 @@
 header {
-    background-color:#322E2F; margin-bottom: 20px;
+    background-color:#322E2F; margin-bottom: 20px;  padding-bottom: 10px;
 }
 h1 {
-    color: #C7DDCC; text-align: center;
+    color: #C7DDCC; text-align: center; font-size: 50px ; margin-top: 40px;  padding-top: 10px;
 }
 nav {
-    background-color:#C7DDCC; text-align: center; margin-top: -20px;
+    background-color:#C7DDCC; text-align: center; display: flex; margin-top:-25px; 
 }
 a {
-    color: #322E2F;
+    color: #322E2F; width: 25%;
 }
 body {
     background-color: #75C9B7;
@@ -17,11 +17,11 @@ hgroup {
     background-color: #C7DDCC; display: flex;
 }
 article {
-    background-color: #12A4D9; width: 60%;
+    background-color: #12A4D9; width: 80%; text-align: center; margin: 8px; padding: 10px;
 }
 aside {
-    background-color: #D9138A; width: 40%;
+    background-color: #D9138A; width: 20%; text-align: center; margin: 8px; margin-left: -1px; padding: 10px; 
 }
 footer {
-    background-color: #E2D810;
+    background-color: #E2D810; text-align: center; 
 }
