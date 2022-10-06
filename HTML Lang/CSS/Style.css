@@ -9,6 +9,11 @@ nav {
 }
 a {
     color: #322E2F; width: 25%;
+    text-decoration: none;
+}
+a:hover{
+  color: red;
+  text-decoration: underline;
 }
 body {
     background-color: #75C9B7;
