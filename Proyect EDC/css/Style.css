@@ -1,16 +1,31 @@
+hgroup {
+    border: 1px; margin-left: 157px; margin-right: 157px; padding-left: 12px; padding-right: 12px;
+}
 nav {
-    text-align: right;
+    text-align: right; border-top: 1px; border-top-style: solid; border-top-color: #D3D3D3; padding: 12px;
 }
 a {
-    color: #104c42; text-decoration: none; padding-left: 4px; padding-right: 4px; margin-left: 20px;
+    color: #104c42; text-decoration: none; padding-left: 4px; padding-right: 4px; margin-left: 20px; font-family:Arial, Helvetica, sans-serif ;
 }
 a:hover {
     color: black;
   text-decoration: underline;
 }
 h1 {
-    color: white;
+    color: white; padding-left: 56px; padding-right: 12px; font-family: Arial, Helvetica, sans-serif;
 }
 div {
-    background-image: url(https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg);
+    background-image: url(https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg); padding-top: 48px; padding-bottom: 48px; padding-left: 12px; padding-right: 12px; 
+}
+article {
+    text-align: center; margin-left: 68px; margin-right: 68px; padding-left: 12px; padding-right: 12px; font-family:Arial, Helvetica, sans-serif ;
+}
+h2 {
+    color: #B08F5C;
+}
+p {
+    color: #646D6C;
+}
+img {
+    padding-top: 14.4px; padding-bottom: 14.4px;
 }
