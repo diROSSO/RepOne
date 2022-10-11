@@ -1,24 +1,85 @@
+
+#a{
+    font-size: 40px;
+    font-weight: 900;
+    grid-column: 1 / 4;
+}
+#b{
+    font-size: 35px;
+    font-weight: 400;
+    padding-right: 7px;
+    grid-column: 2 / 3;
+}
+#c{
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: -8px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+#d{
+    font-size: 35px;
+    font-weight: 400;
+    grid-column: 3 / 4;
+}
+#nav1{
+    padding-right: 295px;
+}
+.grid-container{
+    display: grid;
+    background-color: #c2c2c2;
+    grid-template-columns: auto auto auto;
+    width: 775px;
+}
 hgroup {
-    border: 1px; margin-left: 157px; margin-right: 157px; padding-left: 12px; padding-right: 12px;
+    border: 1px; 
+    margin-left: 157px; 
+    margin-right: 157px; 
+    padding-left: 12px; 
+    padding-right: 12px;
 }
 nav {
-    text-align: right; border-top: 1px; border-top-style: solid; border-top-color: #D3D3D3; padding: 12px;
+    text-align: right; 
+    border-top: 1px; 
+    border-top-style: solid; 
+    border-top-color: #D3D3D3; 
+    padding: 12px;
 }
 a {
-    color: #104c42; text-decoration: none; padding-left: 4px; padding-right: 4px; margin-left: 20px; font-family:Arial, Helvetica, sans-serif ;
+    color: #104c42; 
+    text-decoration: none; 
+    padding-left: 4px; 
+    padding-right: 4px; 
+    margin-left: 20px; 
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 14px;
+    font-weight: 500;
 }
 a:hover {
     color: black;
-  text-decoration: underline;
+    text-decoration: underline;
 }
 h1 {
-    color: white; padding-left: 56px; padding-right: 12px; font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    padding-left: 56px; 
+    padding-right: 12px; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 div {
-    background-image: url(https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg); padding-top: 48px; padding-bottom: 48px; padding-left: 12px; padding-right: 12px; 
+    background: url(../img/hero.jpg) 100% / cover no-repeat; 
+    padding-top: 48px; 
+    padding-bottom: 48px; 
+    padding-left: 12px; 
+    padding-right: 12px;
+    height: 338px;
 }
 article {
-    text-align: center; margin-left: 68px; margin-right: 68px; padding-left: 12px; padding-right: 12px; font-family:Arial, Helvetica, sans-serif ;
+    text-align: center; 
+    margin-left: 68px; 
+    margin-right: 68px; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+    font-family:Arial, Helvetica, sans-serif ;
 }
 h2 {
     color: #B08F5C;
@@ -27,5 +88,6 @@ p {
     color: #646D6C;
 }
 img {
-    padding-top: 14px; padding-bottom: 14px;
+    padding-top: 14px; 
+    padding-bottom: 14px;
 }
