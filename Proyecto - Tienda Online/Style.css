@@ -1,12 +1,20 @@
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 button {
     border-radius: 25px; 
     border: solid #3F7CC4 1px; 
     text-align: center; 
     background: none;
     margin-top: 25px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
-    font-size: 15px;
+    font-size: 17px;
+}
+#buttons{
+    margin-left: 75px;
+    margin-bottom: 15px;
 }
 button:hover{
     color: white;
@@ -19,10 +27,62 @@ button:hover{
 }
 header{
     display: flex;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 15px;
 }
 nav{
     width: 70%;
     margin-top: 25px;
-    margin-left: 10px;
+    margin-left: 15px;
+    text-align: left;
+}
+#navi{
+    margin-right: 15px;
+}
+a{
+    text-decoration: none;
+    color: #f17151;
+}
+a:hover{
+    color: #90bdf1;
+}
+h1 {
+    font-size: 40px;
+    font-weight:400;
+}
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+#UnaExperiencia{
+    background-color: #006241;
+    color: white;
+    text-align: center;
+    padding-bottom: 35px;
+}
+#alebrijes{
+    display: flex;
+    background-color: #D40032;
+    color: white;
+}
+#AlebrijesText{
+    width: 50%;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+#carrito{
+    color: white;
+    border: solid #ffffff 2px;
+}
+#carrito:hover{
+    background-color: white;
+    color: #D40032;
+}
+footer{
+    padding-top: 40px;
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: #E4E4E4;
+    margin-bottom: 50px;
 }
